@@ -23,21 +23,21 @@ import { ElMessage } from 'element-plus';
 const apply = reactive([
   {
     // 高性能
-    img: '/assets/images/gxn.png',
+    img: '/alphasparselib.github.io/assets/images/gxn.png',
     title: 'apply.title1',
     content: 'apply.content1',
     button: 'button.get_it_now',
   },
   {
     // 跨平台
-    img: '/assets/images/kpt.png',
+    img: '/alphasparselib.github.io/assets/images/kpt.png',
     title: 'apply.title2',
     content: 'apply.content2',
     button: 'button.get_it_now',
   },
   {
     // 开源
-    img: '/assets/images/ky.png',
+    img: '/alphasparselib.github.io/assets/images/ky.png',
     title: 'apply.title3',
     content: 'apply.content3',
     button: 'button.get_it_now',
@@ -45,7 +45,7 @@ const apply = reactive([
   },
   {
     // 用户手册
-    img: '/assets/images/yhsc.png',
+    img: '/alphasparselib.github.io/assets/images/yhsc.png',
     title: 'apply.title4',
     content: 'apply.content4',
     button: 'button.get_it_now',
@@ -53,7 +53,7 @@ const apply = reactive([
   },
   {
     // 可扩展性
-    img: '/assets/images/ktzx.png',
+    img: '/alphasparselib.github.io/assets/images/ktzx.png',
     title: 'apply.title5',
     content: 'apply.content5',
     button: 'button.get_it_now',
@@ -61,7 +61,7 @@ const apply = reactive([
   },
   {
     // 集思广益
-    img: '/assets/images/jsgy.png',
+    img: '/alphasparselib.github.io/assets/images/jsgy.png',
     title: 'apply.title6',
     content: 'apply.content6',
     button: 'button.participate_now',
