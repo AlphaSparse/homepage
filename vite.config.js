@@ -20,6 +20,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
     }),
   ],
+  base: '/alphasparselib.github.io/',
   server: {
     port: 8080,
     host: true,
