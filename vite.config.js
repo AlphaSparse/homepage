@@ -20,6 +20,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
     }),
   ],
+  outputDir: 'docs',
   server: {
     port: 8080,
     host: true,
