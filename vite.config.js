@@ -9,6 +9,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/alphasparselib.github.io/',
   plugins: [
     vue(),
     AutoImport({
@@ -20,13 +21,9 @@ export default defineConfig({
       resolvers: [ElementPlusResolver({ importStyle: 'sass' })],
     }),
   ],
-  base: '/alphasparselib.github.io/',
   build: {
-    outDir: 'docs', //指定输出路径（相对于 项目根目录).
+    outDir: 'dist', //指定输出路径（相对于 项目根目录).
     assetsDir: 'assets', //指定生成静态资源的存放路径
-    rollupOptions: {
-      // ...
-    },
   },
   server: {
     port: 8080,
