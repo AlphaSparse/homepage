@@ -18,6 +18,7 @@
 </template>
 <script setup>
 const { t, locale } = useI18n();
+import { ElMessage } from 'element-plus';
 
 const apply = reactive([
   {
@@ -56,6 +57,7 @@ const apply = reactive([
     title: 'apply.title5',
     content: 'apply.content5',
     button: 'button.get_it_now',
+    path: 'https://github.com/ALSparse/ALSparse/wiki/Customize:Formats',
   },
   {
     // 集思广益
@@ -74,6 +76,11 @@ function handClick(row) {
   let flag = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
   if (row.path) {
     window.open(row.path, flag ? '_self' : '_blank');
+  } else {
+    ElMessage({
+      message: '功能建设中...',
+      type: 'warning',
+    });
   }
 }
 </script>
