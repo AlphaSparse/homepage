@@ -11,6 +11,17 @@ const routes = [
         path: '/home',
         name: 'home',
         component: () => import('@/views/home/index.vue'),
+        meta: {
+          title: '首页',
+        },
+      },
+      {
+        path: '/highPerformance',
+        name: 'high-performance',
+        component: () => import('@/views/highPerformance/index.vue'),
+        meta: {
+          title: '高性能',
+        },
       },
     ],
   },

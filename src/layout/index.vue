@@ -8,7 +8,9 @@
         <div class="lang-item" v-for="(item, index) in options" :key="index" :class="{ active: item.value === activeName }" @click="handLang(item)">{{ item.label }}</div>
       </div>
     </div>
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
     <div class="layout-footer">
       <img class="logo" src="@/assets/images/logo-grey.png" alt="底部logo" />
       <div class="copyright">

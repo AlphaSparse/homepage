@@ -17,8 +17,9 @@
   </div>
 </template>
 <script setup>
-const { t, locale } = useI18n();
 import { ElMessage } from 'element-plus';
+
+const router = useRouter();
 
 const apply = reactive([
   {
@@ -27,6 +28,7 @@ const apply = reactive([
     title: 'apply.title1',
     content: 'apply.content1',
     button: 'button.get_it_now',
+    path: '/highPerformance',
   },
   {
     // 跨平台
@@ -69,13 +71,23 @@ const apply = reactive([
   },
 ]);
 
+// 判断地址是否为网络地址
+function isValidUrl(string) {
+  const regex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+  return regex.test(string);
+}
+
 // 跳转
 function handClick(row) {
   // 判断是否为移动端
   const ua = navigator.userAgent;
   let flag = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
   if (row.path) {
-    window.open(row.path, flag ? '_self' : '_blank');
+    if (isValidUrl(row.path)) {
+      window.open(row.path, flag ? '_self' : '_blank');
+    } else {
+      router.push({ path: row.path });
+    }
   } else {
     ElMessage({
       message: '功能建设中...',
