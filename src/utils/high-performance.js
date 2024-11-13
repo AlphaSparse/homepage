@@ -37,7 +37,7 @@ export default [
                         name: 'single-2.png',
                       },
                     ],
-                    textInfo: ['测试信息', '测试平台：NVIDIA A100'],
+                    textInfo: ['测试信息double', '测试平台：NVIDIA A100'],
                   },
                 ],
               },
