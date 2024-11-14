@@ -23,6 +23,12 @@ export default [
                         name: 'single-2.png',
                       },
                     ],
+                    dataSource: [
+                      {
+                        url: '/test/spmv_csr_d_gpu.csv',
+                        name: 'spmv_csr_d_gpu.csv',
+                      },
+                    ],
                     textInfo: ['测试信息', '测试平台：NVIDIA A100'],
                   },
                   {

@@ -4,16 +4,16 @@
       <Tree v-model="state.currentNodeKey" @change="onChange" />
     </view>
     <view class="view-content">
+      <el-empty v-if="state.fileList.length === 0" description="请选择资源" />
       <view v-if="state.fileList.length" class="view-box" :class="{ column: state.fileList.length === 1 }">
         <el-image class="image-content" v-for="(file, index) in state.fileList" :src="file.url" :preview-src-list="state.previewList" :initial-index="index" fit="fill" />
         <div v-if="state.textData.length" class="test-info">
           <div v-for="text in state.textData">{{ text }}</div>
         </div>
       </view>
-      <view v-if="state.fileList.length" class="view-btn">
+      <view v-if="state.dataSourceData.length" class="view-btn">
         <el-button type="primary" :icon="Download" :loading="state.btnLoading" @click="downloadZip">获取数据源</el-button>
       </view>
-      <el-empty v-if="state.fileList.length === 0" description="请选择资源" />
     </view>
   </div>
 </template>
@@ -31,6 +31,7 @@ const state = reactive({
   fileList: [], //资源数据
   previewList: [], //预览地址集合
   textData: [], //描述数据
+  dataSourceData: [], //数据源
   btnLoading: false, //加载
 });
 
@@ -53,9 +54,10 @@ const formatedFilePath = files => {
 // 选中节点变化
 const onChange = data => {
   state.currentNode = data;
-  state.fileList = formatedFilePath(data.file);
-  state.previewList = state.fileList.map(v => v.url);
-  state.textData = data.textInfo;
+  state.dataSourceData = data.dataSource && data.dataSource.length ? formatedFilePath(data.dataSource) : [];
+  state.fileList = data.file && data.file.length ? formatedFilePath(data.file) : [];
+  state.previewList = state.fileList.length ? state.fileList.map(v => v.url) : [];
+  state.textData = data.textInfo ? data.textInfo : [];
 };
 
 // 下载资源
@@ -64,7 +66,7 @@ const downloadZip = async () => {
   const zip = new JSZip();
   const zipName = state.currentNode.label + '-' + parseTime(new Date(), '{y}{m}{d}{h}{i}{s}') + '.zip';
   // 为每个文件添加一个条目
-  for (const file of state.fileList) {
+  for (const file of state.dataSourceData) {
     if (file.url) {
       let fileName = file.name || file.url.split('/').pop();
       try {
