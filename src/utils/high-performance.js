@@ -15,7 +15,7 @@ export default [
                     label: 'single',
                     file: [
                       {
-                        url: '/AlphaSparseLib/single-1.png',
+                        url: '/test/1.png',
                         name: 'single-1.png',
                       },
                       {
