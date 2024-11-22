@@ -51,7 +51,7 @@ const apply = reactive([
     title: 'apply.title4',
     content: 'apply.content4',
     button: 'button.get_it_now',
-    path: 'https://alsparse.github.io/ALSparse',
+    path: 'https://alphasparse.github.io/Library/build/html/index.html',
   },
   {
     // 可扩展性
