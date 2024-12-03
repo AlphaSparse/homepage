@@ -57,7 +57,7 @@ export default [
                     textInfo: ['测试信息','测试平台: 海光DCU Z100'],
                   },
                 ],
-          }
+          },
               {
                 label: 'spmm',
               },
@@ -129,7 +129,7 @@ export default [
                     textInfo: ['测试信息', '测试平台: NVIDIA-GPU A100'],
                   },
                 ],
-          }
+          },
               {
                 label: 'spmm',
               },
