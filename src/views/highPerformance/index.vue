@@ -96,7 +96,7 @@ const downloadZip = async () => {
 }
 .node-content {
   width: 320px;
-  min-height: 750x;
+  // min-height: 750x;
   margin-right: 30px;
   flex-shrink: 0;
   background: #ffffff;
@@ -106,7 +106,7 @@ const downloadZip = async () => {
 }
 .view-content {
   min-width: 400px;
-  min-height: 750px;
+  // min-height: 750px;
   flex: 1;
   background: #ffffff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);

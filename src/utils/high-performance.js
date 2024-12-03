@@ -72,8 +72,6 @@ export default [
           },
         ],
       },
-    ],
-    children: [
       {
         label: 'NVIDIA-GPU',
         children: [
