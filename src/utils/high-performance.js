@@ -30,7 +30,7 @@ export default [
                         name: 'spmv_csr_s_dcu.csv',
                       },
                     ],
-                    textInfo: ['测试信息', '测试平台：海光DCU Z100'],
+                    textInfo: ['测试信息', '测试平台: 海光DCU Z100'],
                   },
                   {
                     label: 'double',
@@ -54,7 +54,7 @@ export default [
                         name: 'spmv_csr_d_dcu.csv',
                       },
                     ],
-                    textInfo: ['测试信息', '测试平台：海光DCU Z100'],
+                    textInfo: ['测试信息','测试平台: 海光DCU Z100'],
                   },
                 ],
           }
@@ -102,7 +102,7 @@ export default [
                         name: 'spmv_csr_s_gpu.csv',
                       },
                     ],
-                    textInfo: ['测试信息', '测试平台：NVIDIA-GPU A100'],
+                    textInfo: ['测试信息', '测试平台: NVIDIA-GPU A100'],
                   },
                   {
                     label: 'double',
@@ -126,7 +126,7 @@ export default [
                         name: 'spmv_csr_d_gpu.csv',
                       },
                     ],
-                    textInfo: ['测试信息', '测试平台：NVIDIA-GPU A100'],
+                    textInfo: ['测试信息', '测试平台: NVIDIA-GPU A100'],
                   },
                 ],
           }
