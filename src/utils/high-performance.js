@@ -8,45 +8,56 @@ export default [
           {
             label: 'spmv',
             children: [
-              {
-                label: 'csr',
-                children: [
                   {
                     label: 'single',
                     file: [
                       {
-                        url: '/test/1.png',
-                        name: 'single-1.png',
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_s_dist_dcu.png',
+                        name: 'spmv_csr_s_dist_dcu.png',
                       },
                       {
-                        url: '/AlphaSparseLib/single-2.png',
-                        name: 'single-2.png',
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_s_pdf_dcu.png',
+                        name: 'spmv_csr_s_pdf_dcu.png',
                       },
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_s_bestAlg_dcu.png',
+                        name: 'spmv_csr_s_bestAlg_dcu.png',
+                      },                      
                     ],
                     dataSource: [
                       {
-                        url: '/test/spmv_csr_d_gpu.csv',
-                        name: 'spmv_csr_d_gpu.csv',
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_s_dcu.csv',
+                        name: 'spmv_csr_s_dcu.csv',
                       },
                     ],
-                    textInfo: ['测试信息', '测试平台：NVIDIA A100'],
+                    textInfo: ['测试信息', '测试平台：海光DCU Z100'],
                   },
                   {
                     label: 'double',
                     file: [
                       {
-                        url: '/AlphaSparseLib/single-1.png',
-                        name: 'single-1.png',
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_d_dist_dcu.png',
+                        name: 'spmv_csr_d_dist_dcu.png',
                       },
                       {
-                        url: '/AlphaSparseLib/single-1.png',
-                        name: 'single-2.png',
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_d_pdf_dcu.png',
+                        name: 'spmv_csr_d_pdf_dcu.png',
+                      },
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_d_bestAlg_dcu.png',
+                        name: 'spmv_csr_d_bestAlg_dcu.png',
+                      },                      
+                    ],
+                    dataSource: [
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/Hygon-DCU/spmv/csr/spmv_csr_d_dcu.csv',
+                        name: 'spmv_csr_d_dcu.csv',
                       },
                     ],
-                    textInfo: ['测试信息double', '测试平台：NVIDIA A100'],
+                    textInfo: ['测试信息', '测试平台：海光DCU Z100'],
                   },
                 ],
-              },
+          }
               {
                 label: 'spmm',
               },
@@ -60,64 +71,79 @@ export default [
                 label: 'sptrsm',
               },
             ],
-          },
-        ],
-      },
+       },
     ],
-  },
-  {
-    label: 'NVIDIA-GPU',
-    children: [
-      {
-        label: 'spmv',
+    children:[
+       {
+        label: 'NVIDIA-GPU',
         children: [
           {
-            label: 'csr',
+            label: 'spmv',
             children: [
-              {
-                label: 'single',
-                file: [
                   {
-                    url: 'https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg',
-                    name: 'single-1.png',
+                    label: 'single',
+                    file: [
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_s_dist_gpu.png',
+                        name: 'spmv_csr_s_dist_gpu.png',
+                      },
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_s_pdf_gpu.png',
+                        name: 'spmv_csr_s_pdf_gpu.png',
+                      },
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_s_bestAlg_gpu.png',
+                        name: 'spmv_csr_s_bestAlg_gpu.png',
+                      },                      
+                    ],
+                    dataSource: [
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_s_gpu.csv',
+                        name: 'spmv_csr_s_gpu.csv',
+                      },
+                    ],
+                    textInfo: ['测试信息', '测试平台：NVIDIA-GPU A100'],
                   },
                   {
-                    url: '/AlphaSparseLib/single-2.png',
-                    name: 'single-2.png',
+                    label: 'double',
+                    file: [
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_d_dist_gpu.png',
+                        name: 'spmv_csr_d_dist_gpu.png',
+                      },
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_d_pdf_gpu.png',
+                        name: 'spmv_csr_d_pdf_gpu.png',
+                      },
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_d_bestAlg_gpu.png',
+                        name: 'spmv_csr_d_bestAlg_gpu.png',
+                      },                      
+                    ],
+                    dataSource: [
+                      {
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/spmv_csr_d_gpu.csv',
+                        name: 'spmv_csr_d_gpu.csv',
+                      },
+                    ],
+                    textInfo: ['测试信息', '测试平台：NVIDIA-GPU A100'],
                   },
                 ],
-                textInfo: ['测试信息', '测试平台：NVIDIA A100'],
+          }
+              {
+                label: 'spmm',
               },
               {
-                label: 'double',
-                file: [
-                  {
-                    url: '/AlphaSparseLib/single-1.png',
-                    name: 'single-1.png',
-                  },
-                  {
-                    url: '/AlphaSparseLib/single-2.png',
-                    name: 'single-2.png',
-                  },
-                ],
-                textInfo: ['测试信息', '测试平台：NVIDIA A100'],
+                label: 'spgemm',
+              },
+              {
+                label: 'sptrsv',
+              },
+              {
+                label: 'sptrsm',
               },
             ],
-          },
-          {
-            label: 'spmm',
-          },
-          {
-            label: 'spgemm',
-          },
-          {
-            label: 'sptrsv',
-          },
-          {
-            label: 'sptrsm',
-          },
-        ],
-      },
-    ],
+        },     
+    ]
   },
 ];
