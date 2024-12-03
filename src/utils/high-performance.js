@@ -1,7 +1,7 @@
 export default [
   {
     label: 'AlphaSparseLib',
-    children: [
+    children:[
       {
         label: 'Hygon-DCU',
         children: [
@@ -92,7 +92,7 @@ export default [
                         name: 'spmv_csr_s_pdf_gpu.png',
                       },
                       {
-                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_bestAlg_gpu.png',
+                        url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_bestALg_gpu.png',
                         name: 'spmv_csr_s_bestAlg_gpu.png',
                       },                      
                     ],
