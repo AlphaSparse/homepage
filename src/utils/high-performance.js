@@ -9,7 +9,7 @@ export default [
             label: 'spmv',
             children: [
               {
-                label: 'single_1thread',
+                label: 'csr_s_1thread',
                 file: [
                   {
                     url: '/Alphasparse/Hygon-CPU/spmv/csr/single/spmv_csr_s_dist_cpu.png',
@@ -30,10 +30,10 @@ export default [
                     name: 'spmv_csr_s_alg_cpu.csv',
                   },
                 ],
-                textInfo: ['测试信息', '测试平台: 海光CPU Z100'],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
               },
               {
-                label: 'single_1numa_8thread',
+                label: 'csr_s_1numa_8thread',
                 file: [
                   {
                     url: '/Alphasparse/Hygon-CPU/spmv/csr/single/spmv_csr_s_dist_cpu_numa.png',
@@ -54,7 +54,7 @@ export default [
                     name: 'spmv_csr_s_alg_cpu_numa.csv',
                   },
                 ],
-                textInfo: ['测试信息', '测试平台: 海光DCU Z100'],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
               },
             ],
           },
@@ -79,7 +79,7 @@ export default [
             label: 'spmv',
             children: [
               {
-                label: 'single',
+                label: 'csr_s',
                 file: [
                   {
                     url: '/Alphasparse/Hygon-DCU/spmv/csr/single/spmv_csr_s_dist_dcu.png',
@@ -103,7 +103,7 @@ export default [
                 textInfo: ['测试信息', '测试平台: 海光DCU Z100'],
               },
               {
-                label: 'double',
+                label: 'csr_d',
                 file: [
                   {
                     url: '/Alphasparse/Hygon-DCU/spmv/csr/double/spmv_csr_d_dist_dcu.png',
@@ -132,7 +132,7 @@ export default [
             label: 'spmm',
              children: [
               {
-                label: 'single',
+                label: 'csr_s',
                 file: [
                   {
                     url: '/Alphasparse/Hygon-DCU/spmm/csr/single/spmm_csr_rm_c64_s_dist_dcu.png',
@@ -156,7 +156,7 @@ export default [
                 textInfo: ['测试信息', '测试平台: 海光DCU Z100'],
               },
               {
-                label: 'double',
+                label: 'csr_d',
                 file: [
                   {
                     url: '/Alphasparse/Hygon-DCU/spmm/csr/double/spmm_csr_rm_c64_d_dist_dcu.png',
@@ -199,48 +199,48 @@ export default [
             label: 'spmv',
             children: [
               {
-                label: 'single',
+                label: 'csr_s',
                 file: [
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_dist_gpu.png',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_dist_gpu.png',
                     name: 'spmv_csr_s_dist_gpu.png',
                   },
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_pdf_gpu.png',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_pdf_gpu.png',
                     name: 'spmv_csr_s_pdf_gpu.png',
                   },
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_bestALg_gpu.png',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_bestALg_gpu.png',
                     name: 'spmv_csr_s_bestAlg_gpu.png',
                   },
                 ],
                 dataSource: [
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_gpu.csv',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/single/spmv_csr_s_gpu.csv',
                     name: 'spmv_csr_s_gpu.csv',
                   },
                 ],
                 textInfo: ['测试信息', '测试平台: NVIDIA-GPU A100'],
               },
               {
-                label: 'double',
+                label: 'csr_d',
                 file: [
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_dist_gpu.png',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_dist_gpu.png',
                     name: 'spmv_csr_d_dist_gpu.png',
                   },
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_pdf_gpu.png',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_pdf_gpu.png',
                     name: 'spmv_csr_d_pdf_gpu.png',
                   },
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_bestAlg_gpu.png',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_bestAlg_gpu.png',
                     name: 'spmv_csr_d_bestAlg_gpu.png',
                   },
                 ],
                 dataSource: [
                   {
-                    url: '/AlphaSparseLib/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_gpu.csv',
+                    url: '/Alphasparse/NVIDIA-GPU/spmv/csr/double/spmv_csr_d_gpu.csv',
                     name: 'spmv_csr_d_gpu.csv',
                   },
                 ],
@@ -258,7 +258,7 @@ export default [
             label: 'sptrsv',
                children: [
               {
-                label: 'single',
+                label: 'csr_s',
                 file: [
                   {
                     url: '/Alphasparse/NVIDIA-GPU/trsv/csr/single/sptrsv_csr_w-pre_analysis_s_dist_gpu.png',
@@ -282,7 +282,7 @@ export default [
                 textInfo: ['测试信息', '测试平台: NVIDIA-GPU A100'],
               },
               {
-                label: 'double',
+                label: 'csr_d',
                 file: [
                   {
                     url: '/Alphasparse/NVIDIA-GPU/trsv/csr/double/sptrsv_csr_w-pre_analysis_d_dist_gpu.png',
