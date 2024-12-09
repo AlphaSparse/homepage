@@ -130,7 +130,7 @@ export default [
           },
           {
             label: 'spmm',
-             children: [
+            children: [
               {
                 label: 'csr_s',
                 file: [
@@ -249,14 +249,14 @@ export default [
             ],
           },
           {
-            label: 'spmm',        
+            label: 'spmm',
           },
           {
             label: 'spgemm',
           },
           {
             label: 'sptrsv',
-               children: [
+            children: [
               {
                 label: 'csr_s',
                 file: [
@@ -305,13 +305,13 @@ export default [
                 ],
                 textInfo: ['测试信息', '测试平台: NVIDIA-GPU A100'],
               },
-            ],         
+            ],
           },
           {
             label: 'sptrsm',
           },
         ],
-      },      
+      },
     ],
   },
 ];

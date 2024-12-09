@@ -7,12 +7,15 @@
       <el-empty v-if="state.fileList.length === 0" description="请选择资源" />
       <view v-if="state.fileList.length" class="view-box" :class="{ column: state.fileList.length === 1 }">
         <el-image class="image-content" v-for="(file, index) in state.fileList" :src="file.url" :preview-src-list="state.previewList" :initial-index="index" fit="fill" />
-        <div v-if="state.textData.length" class="test-info">
-          <div v-for="text in state.textData">{{ text }}</div>
+        <div class="description-content">
+          <div v-if="state.textData.length" class="test-info">
+            <div class="test-item" v-for="text in state.textData">{{ text }}</div>
+          </div>
+
+          <view v-if="state.dataSourceData.length" class="view-btn">
+            <el-button type="primary" :icon="Download" :loading="state.btnLoading" @click="downloadZip">获取数据源</el-button>
+          </view>
         </div>
-      </view>
-      <view v-if="state.dataSourceData.length" class="view-btn">
-        <el-button type="primary" :icon="Download" :loading="state.btnLoading" @click="downloadZip">获取数据源</el-button>
       </view>
     </view>
   </div>
@@ -91,14 +94,14 @@ const downloadZip = async () => {
   padding: 30px 10%;
   box-sizing: border-box;
   background: #ebf7ff;
-  display: flex;
   overflow: auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-gap: 30px;
+  align-items: start;
 }
 .node-content {
-  width: 320px;
-  // min-height: 750x;
-  margin-right: 30px;
-  flex-shrink: 0;
+  min-height: 705px;
   background: #ffffff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   padding: 30px 0;
@@ -106,8 +109,7 @@ const downloadZip = async () => {
 }
 .view-content {
   min-width: 400px;
-  // min-height: 750px;
-  flex: 1;
+  min-height: 300px;
   background: #ffffff;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   padding: 30px;
@@ -126,28 +128,33 @@ const downloadZip = async () => {
   .image-content {
     width: 100%;
     height: 100%;
+    min-height: 200px;
     border: 1px solid #cbeaff;
     padding: 5px;
     box-sizing: border-box;
   }
-  .test-info {
-    font-size: 14px;
-    color: #333333;
-    line-height: 19px;
-  }
-}
-.view-btn {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
-  .el-button {
-    color: #fff;
+  .description-content {
+    .test-info {
+      margin-bottom: 20px;
+      .test-item {
+        font-size: 14px;
+        color: #333333;
+        line-height: 19px;
+      }
+    }
+    .view-btn {
+      display: flex;
+      justify-content: flex-end;
+      .el-button {
+        color: #fff;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 1300px) {
-  .node-content {
-    width: 250px;
+  .high-performance-container {
+    grid-template-columns: 250px 1fr;
   }
   .view-box {
     grid-template-columns: 100%;
