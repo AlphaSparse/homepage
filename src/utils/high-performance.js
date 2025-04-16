@@ -56,6 +56,26 @@ export default [
                 ],
                 textInfo: ['测试信息', '测试平台: 海光CPU'],
               },
+              {
+                label: 'csr_d_1thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmv/csr/single/spmv_csr_1_d_cpu.png',
+                    name: 'spmv_csr_d_cpu_1.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },
+              {
+                label: 'csr_d_1numa_8thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmv/csr/single/spmv_csr_8_d_cpu.png',
+                    name: 'spmv_csr_d_cpu_numa.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },
             ],
           },
           {
