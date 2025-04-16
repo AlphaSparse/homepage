@@ -80,6 +80,64 @@ export default [
           },
           {
             label: 'spmm',
+            children: [
+              {
+                label: 'csr_s_1thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_1_32_s_cpu.png',
+                    name: 'spmm_csr_1_rm_32_s.png',
+                  },
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_1_64_s_cpu.png',
+                    name: 'spmm_csr_1_rm_64_s.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },
+              {
+                label: 'csr_s_1numa_8thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_8_32_s_cpu.png',
+                    name: 'spmm_csr_8_rm_32_s.png',
+                  },
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_8_64_s_cpu.png',
+                    name: 'spmm_csr_8_rm_64_s.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },
+              {
+                label: 'csr_d_1thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_1_32_d_cpu.png',
+                    name: 'spmm_csr_1_rm_32_d.png',
+                  },
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_1_64_d_cpu.png',
+                    name: 'spmm_csr_1_rm_64_d.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },
+              {
+                label: 'csr_s_1numa_8thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_8_32_d_cpu.png',
+                    name: 'spmm_csr_8_rm_32_d.png',
+                  },
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spmm/csr/row/spmm_csr_rm_8_64_d_cpu.png',
+                    name: 'spmm_csr_8_rm_64_d.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },
+            ],
           },
           {
             label: 'spgemm',
