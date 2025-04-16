@@ -144,6 +144,22 @@ export default [
           },
           {
             label: 'sptrsv',
+            children: [
+              {
+                label: 'csr_1thread',
+                file: [
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spsv/csr/spsv_csr_1_s_u_cpu.png',
+                    name: 'spsv_csr_1_s_u_cpu.png',
+                  },
+                  {
+                    url: '/Alphasparse/Hygon-CPU/spsv/csr/spsv_csr_1_d_u_cpu.png',
+                    name: 'spsv_csr_1_d_u_cpu.png',
+                  },
+                ],
+                textInfo: ['测试信息', '测试平台: 海光CPU'],
+              },              
+            ],
           },
           {
             label: 'sptrsm',
